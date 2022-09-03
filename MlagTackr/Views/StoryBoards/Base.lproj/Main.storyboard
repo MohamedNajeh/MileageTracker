@@ -20,18 +20,27 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Trips recorded yet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mz4-Qi-dc3">
+                                <rect key="frame" x="101" y="434.5" width="212" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="gW7-En-6Oc" secondAttribute="bottom" id="AWP-HW-Unb"/>
+                            <constraint firstItem="Mz4-Qi-dc3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OKg-vS-V8A"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gW7-En-6Oc" secondAttribute="trailing" id="OXz-cq-JEh"/>
                             <constraint firstItem="gW7-En-6Oc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jNb-Iq-fX6"/>
                             <constraint firstItem="gW7-En-6Oc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vE3-Iu-VVK"/>
+                            <constraint firstItem="Mz4-Qi-dc3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wV9-FJ-AgF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Recorded trips" id="CtD-bO-A3h"/>
                     <connections>
+                        <outlet property="noTripsLbl" destination="Mz4-Qi-dc3" id="9jO-7f-lEx"/>
                         <outlet property="tableView" destination="gW7-En-6Oc" id="Ibm-4m-XcD"/>
                     </connections>
                 </viewController>

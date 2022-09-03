@@ -9,6 +9,7 @@ import UIKit
 
 class tripCell: UITableViewCell {
 
+    @IBOutlet weak var tripTitleLbl: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -18,6 +19,10 @@ class tripCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func configureCell(title:String){
+        tripTitleLbl.text = title
     }
     
 }

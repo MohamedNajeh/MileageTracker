@@ -6,24 +6,27 @@
 //
 
 import UIKit
-
+import MapKit
+import CoreLocation
+import FirebaseDatabase
 class MapVC: UIViewController {
 
+    @IBOutlet weak var mapView: MKMapView!
+    var loc1:CLLocationCoordinate2D!
+    var loc2:CLLocationCoordinate2D!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        mapView.delegate = self
+        mapView.showRouteOnMap(pickupCoordinate: loc1, destinationCoordinate: loc2)
     }
-    
+}
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension MapVC:MKMapViewDelegate {
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        let renderer = MKPolylineRenderer(overlay: overlay)
+        renderer.strokeColor = UIColor.red
+        renderer.lineWidth = 5.0
+        return renderer
     }
-    */
-
 }
