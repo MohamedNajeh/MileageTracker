@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>653229755-8l1er1po3uij9djimd261v0db0rn9g39.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.653229755-8l1er1po3uij9djimd261v0db0rn9g39</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA5OAZnUmYtlp75tiwnTyaSIKfJcglbzPs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>653229755</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>MohamedNAjeh.MlagTackr</string>
+	<key>PROJECT_ID</key>
+	<string>mlagtracker</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mlagtracker.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:653229755:ios:d0b31f75253957b245b39e</string>
+</dict>
+</plist>
